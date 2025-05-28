@@ -9,8 +9,8 @@ public:
 
 struct Fraction
 {
-    int numerator;
-    int denominator;
+    int numerator;    // the number to be divided
+    int denominator;  // the number to divide by
 };
 
 struct DivisionResult
