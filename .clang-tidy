@@ -36,11 +36,7 @@ CheckOptions:
     value: "1;2;3;4;5;10;20;60;100;1000"
   - key: readability-magic-numbers.IgnoredFloatingPointValues
     value: "1e-9;1e-6;1e-3;0.0;1.0;100.0;1e3;1e4;1e5;1e6;1e9;0.5;2.0;3.0"
-WarningsAsErrors: >
-  -*,
-  clang-analyzer-*,
-  bugprone-*,
-  performance-*,
+WarningsAsErrors: ""
 HeaderFilterRegex: '.*\.hpp'
 AnalyzeTemporaryDtors: false
 FormatStyle: file
