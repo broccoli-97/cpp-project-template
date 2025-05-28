@@ -1,7 +1,9 @@
 #include "division.h"
 
-DivisionResult Division::divide() const {
-    if (fraction.denominator == 0L) {
+DivisionResult Division::divide() const
+{
+    if (fraction.denominator == 0L)
+    {
         throw DivisionByZero();
     }
 

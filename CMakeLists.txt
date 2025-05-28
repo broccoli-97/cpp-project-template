@@ -6,7 +6,7 @@ project("cpp-project-template" VERSION 1.0.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD                17)
 set(CMAKE_CXX_STANDARD_REQUIRED       ON)
 set(CMAKE_CXX_EXTENSIONS              OFF)
-set(CMAKE_CXX_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_CXX_EXPORT_COMPILE_COMMANDS ON) 
 
 # Options
 option(ENABLE_WARNINGS     "Enable to add warnings to a target."         OFF)
