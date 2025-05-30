@@ -11,9 +11,9 @@ class DividerTest : public ::testing::Test
     VI divisions = {2, 3, 0, 0};
     VI remainders = {1, 0, 17, 9999};
 
-    virtual void SetUp() {};
+    virtual void SetUp() {}
 
-    virtual void TearDown() {};
+    virtual void TearDown() {}
 
     virtual void verify(int index)
     {
