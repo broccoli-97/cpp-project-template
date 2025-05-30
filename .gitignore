@@ -153,3 +153,4 @@ ipch/
 *.e2e
 .DS_Store
 .bash_history
+.cache

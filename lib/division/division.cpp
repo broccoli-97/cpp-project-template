@@ -8,7 +8,8 @@ DivisionResult Division::divide() const
     }
 
     DivisionResult result =
-        DivisionResult{fraction.numerator / fraction.denominator, fraction.numerator % fraction.denominator};
+        DivisionResult{fraction.numerator / fraction.denominator,
+                       fraction.numerator % fraction.denominator};
 
     return result;
 }

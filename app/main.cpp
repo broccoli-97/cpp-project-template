@@ -1,12 +1,14 @@
-#include "division.h"
 #include <iostream>
 
-const std::string HEADER = "\n=== Divider program ===\n\n";
-const std::string USAGE  = "Usage:\n\tdivider <numerator> <denominator>\n\nDescription:\n\tComputes "
-                           "the result of a fractional division,\n\tand reports both the result and "
-                           "the remainder.\n";
+#include "division.h"
 
-int main(int argc, const char* argv[])
+const std::string HEADER = "\n=== Divider program ===\n\n";
+const std::string USAGE =
+    "Usage:\n\tdivider <numerator> <denominator>\n\nDescription:\n\tComputes "
+    "the result of a fractional division,\n\tand reports both the result and "
+    "the remainder.\n";
+
+int main(int argc, const char *argv[])
 {
     Fraction f;
 
@@ -20,7 +22,7 @@ int main(int argc, const char* argv[])
         return EXIT_FAILURE;
     }
 
-    f.numerator   = atoll(argv[1]);
+    f.numerator = atoll(argv[1]);
     f.denominator = atoll(argv[2]);
 
     Division d = Division(f);
@@ -28,8 +30,10 @@ int main(int argc, const char* argv[])
     {
         DivisionResult r = d.divide();
 
-        std::cout << "Division: " << f.numerator << "/" << f.denominator << " = " << r.division << "\n";
-        std::cout << "Remainder: " << f.numerator << "%" << f.denominator << " = " << r.remainder << "\n";
+        std::cout << "Division: " << f.numerator << "/" << f.denominator
+                  << " = " << r.division << "\n";
+        std::cout << "Remainder: " << f.numerator << "%" << f.denominator
+                  << " = " << r.remainder << "\n";
     }
     catch (DivisionByZero excp)
     {
